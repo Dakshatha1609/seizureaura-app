@@ -1,0 +1,19 @@
+# backend/requirements.txt
+Flask
+flask-cors
+torch
+transformers
+scikit-learn
+sentence-transformers
+langchain
+langchain-groq
+langchain-community
+faiss-cpu
+python-dotenv
+requests
+mne
+pyedflib
+torchvision
+torchaudio
+gunicorn
+

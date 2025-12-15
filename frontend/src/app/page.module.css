@@ -1,0 +1,34 @@
+/* frontend/src/app/page.module.css (Corrected) */
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.mainContent {
+  flex-grow: 1;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 2rem 3rem;
+}
+/* Add this to the end of frontend/src/app/page.module.css */
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column; /* Stack instead of side-by-side */
+  }
+
+  .mainContent {
+    padding: 1rem; /* Reduce padding on mobile */
+    height: auto;
+    overflow-y: visible;
+  }
+  
+  /* We will hide the sidebar on mobile for simplicity */
+  /* A hamburger menu could be added later */
+  .sidebar { 
+    display: none; 
+  }
+}

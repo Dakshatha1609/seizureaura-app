@@ -1,0 +1,46 @@
+/* frontend/src/components/ThemeToggle.module.css */
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the items */
+  gap: 0.75rem; /* Increased gap */
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: var(--toggle-bg); /* Use variable */
+  transition: background-color 0.3s;
+}
+
+.toggleSwitch {
+  width: 44px; /* Slightly wider */
+  height: 24px; /* Taller */
+  background-color: rgba(0,0,0,0.2); /* Darker track */
+  border-radius: 12px;
+  padding: 4px; /* Padding for the knob */
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggleKnob {
+  width: 16px;
+  height: 16px;
+  background-color: var(--toggle-knob); /* Use variable */
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  position: absolute;
+}
+
+.toggleKnob.dark {
+  transform: translateX(20px);
+}
+
+.icon {
+  color: var(--toggle-icon); /* Use variable */
+  transition: color 0.3s ease;
+  font-size: 1.1rem; /* Make icons slightly bigger */
+}
+
+.icon.active {
+  color: var(--toggle-icon-active); /* Use variable */
+}
