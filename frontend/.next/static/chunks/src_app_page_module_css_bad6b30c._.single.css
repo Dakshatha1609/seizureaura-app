@@ -1,0 +1,32 @@
+/* [project]/src/app/page.module.css [app-client] (css) */
+.page-module___8aEwW__layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.page-module___8aEwW__mainContent {
+  flex-grow: 1;
+  height: 100vh;
+  padding: 2rem 3rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .page-module___8aEwW__layout {
+    flex-direction: column;
+  }
+
+  .page-module___8aEwW__mainContent {
+    height: auto;
+    padding: 1rem;
+    overflow-y: visible;
+  }
+
+  .page-module___8aEwW__sidebar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_app_page_module_css_bad6b30c._.single.css.map*/

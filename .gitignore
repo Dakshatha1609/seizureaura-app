@@ -1,0 +1,9 @@
+backend/models/
+*.pth
+*.safetensors
+__pycache__/
+env/
+node_modules/
+env
+.env
+backend/env

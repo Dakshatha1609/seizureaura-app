@@ -1,0 +1,539 @@
+/* [project]/src/components/Sidebar.module.css [app-client] (css) */
+.Sidebar-module__WZVnLW__sidebar {
+  background-color: var(--sidebar-bg-color);
+  border-right: 1px solid var(--card-border-color);
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  height: 100vh;
+  padding: 1.5rem;
+  transition: background-color .3s, border-color .3s;
+  display: flex;
+}
+
+.Sidebar-module__WZVnLW__title {
+  text-align: center;
+  color: var(--sidebar-hover-text);
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: color .3s;
+}
+
+.Sidebar-module__WZVnLW__navList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Sidebar-module__WZVnLW__navList li {
+  cursor: pointer;
+  color: var(--sidebar-text-color);
+  border-radius: 8px;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  transition: background-color .2s, color .2s;
+  display: flex;
+}
+
+.Sidebar-module__WZVnLW__navList li:hover {
+  background-color: var(--sidebar-hover-bg);
+  color: var(--sidebar-hover-text);
+}
+
+.Sidebar-module__WZVnLW__navList li.Sidebar-module__WZVnLW__active {
+  background-color: var(--sidebar-active-bg);
+  color: var(--sidebar-active-text);
+  font-weight: 600;
+}
+
+.Sidebar-module__WZVnLW__sidebarFooter {
+  border-top: 1px solid var(--card-border-color);
+  padding-top: 1rem;
+  transition: border-color .3s;
+}
+
+/* [project]/src/app/page.module.css [app-client] (css) */
+.page-module___8aEwW__layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.page-module___8aEwW__mainContent {
+  flex-grow: 1;
+  height: 100vh;
+  padding: 2rem 3rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .page-module___8aEwW__layout {
+    flex-direction: column;
+  }
+
+  .page-module___8aEwW__mainContent {
+    height: auto;
+    padding: 1rem;
+    overflow-y: visible;
+  }
+
+  .page-module___8aEwW__sidebar {
+    display: none;
+  }
+}
+
+/* [project]/src/components/ThemeToggle.module.css [app-client] (css) */
+.ThemeToggle-module__sGqMhG__toggleContainer {
+  cursor: pointer;
+  background-color: var(--toggle-bg);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: .75rem;
+  padding: .5rem;
+  transition: background-color .3s;
+  display: flex;
+}
+
+.ThemeToggle-module__sGqMhG__toggleSwitch {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 12px;
+  align-items: center;
+  width: 44px;
+  height: 24px;
+  padding: 4px;
+  display: flex;
+  position: relative;
+}
+
+.ThemeToggle-module__sGqMhG__toggleKnob {
+  background-color: var(--toggle-knob);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  transition: transform .3s;
+  position: absolute;
+}
+
+.ThemeToggle-module__sGqMhG__toggleKnob.ThemeToggle-module__sGqMhG__dark {
+  transform: translateX(20px);
+}
+
+.ThemeToggle-module__sGqMhG__icon {
+  color: var(--toggle-icon);
+  font-size: 1.1rem;
+  transition: color .3s;
+}
+
+.ThemeToggle-module__sGqMhG__icon.ThemeToggle-module__sGqMhG__active {
+  color: var(--toggle-icon-active);
+}
+
+/* [project]/src/components/ComponentStyles.module.css [app-client] (css) */
+@keyframes ComponentStyles-module__KJq-QG__fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ComponentStyles-module__KJq-QG__popIn {
+  from {
+    opacity: 0;
+    transform: scale(.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ComponentStyles-module__KJq-QG__spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ComponentStyles-module__KJq-QG__blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.ComponentStyles-module__KJq-QG__container {
+  width: 100%;
+}
+
+.ComponentStyles-module__KJq-QG__animatedComponent {
+  width: 100%;
+  animation: .5s ease-out ComponentStyles-module__KJq-QG__fadeIn;
+}
+
+.ComponentStyles-module__KJq-QG__toolContainer {
+  width: 100%;
+  max-width: 800px;
+}
+
+.ComponentStyles-module__KJq-QG__homeContainer {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+}
+
+.ComponentStyles-module__KJq-QG__homeContent {
+  text-align: center;
+  max-width: 900px;
+  animation: .5s ease-out ComponentStyles-module__KJq-QG__fadeIn;
+}
+
+.ComponentStyles-module__KJq-QG__homeGrid {
+  text-align: left;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  display: grid;
+}
+
+.ComponentStyles-module__KJq-QG__infoCard {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.ComponentStyles-module__KJq-QG__infoCard h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .ComponentStyles-module__KJq-QG__homeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ComponentStyles-module__KJq-QG__disclaimerCard {
+  color: #856404;
+  text-align: left;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  max-width: 800px;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ComponentStyles-module__KJq-QG__disclaimerCard h3 {
+  color: #856404;
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+
+.ComponentStyles-module__KJq-QG__featureGrid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 3rem;
+  display: grid;
+}
+
+.ComponentStyles-module__KJq-QG__featureCard {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  text-align: center;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all .3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
+}
+
+.ComponentStyles-module__KJq-QG__featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .1);
+}
+
+.ComponentStyles-module__KJq-QG__featureIcon {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.ComponentStyles-module__KJq-QG__featureCard h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.ComponentStyles-module__KJq-QG__featureCard p {
+  color: var(--text-color-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .ComponentStyles-module__KJq-QG__featureGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ComponentStyles-module__KJq-QG__title {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 2.5rem;
+}
+
+.ComponentStyles-module__KJq-QG__description {
+  color: var(--text-color-muted);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.ComponentStyles-module__KJq-QG__inputGroup {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+}
+
+.ComponentStyles-module__KJq-QG__textarea, .ComponentStyles-module__KJq-QG__chatInput {
+  border: 1px solid var(--input-border-color);
+  background-color: var(--input-bg-color);
+  width: 100%;
+  color: var(--text-color);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: .85rem;
+  font-size: 1rem;
+}
+
+.ComponentStyles-module__KJq-QG__textarea {
+  margin-bottom: 0;
+}
+
+.ComponentStyles-module__KJq-QG__chatInput {
+  flex-grow: 1;
+  height: 50px;
+}
+
+.ComponentStyles-module__KJq-QG__textarea:focus, .ComponentStyles-module__KJq-QG__chatInput:focus {
+  outline: 2px solid var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.ComponentStyles-module__KJq-QG__textarea::placeholder, .ComponentStyles-module__KJq-QG__chatInput::placeholder {
+  color: var(--text-color-muted);
+  opacity: .7;
+}
+
+.ComponentStyles-module__KJq-QG__button, .ComponentStyles-module__KJq-QG__sendButton {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: .85rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all .2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.ComponentStyles-module__KJq-QG__sendButton {
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.ComponentStyles-module__KJq-QG__button:hover:not(:disabled), .ComponentStyles-module__KJq-QG__sendButton:hover:not(:disabled) {
+  background-color: var(--primary-hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+}
+
+.ComponentStyles-module__KJq-QG__buttonContent {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ComponentStyles-module__KJq-QG__loader {
+  border: 4px solid #f3f3f3;
+  border-top-color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  animation: 1s linear infinite ComponentStyles-module__KJq-QG__spin;
+}
+
+.ComponentStyles-module__KJq-QG__resultsContainer {
+  border: 1px solid var(--card-border-color);
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  animation: .4s ease-out ComponentStyles-module__KJq-QG__popIn;
+}
+
+.ComponentStyles-module__KJq-QG__resultItem {
+  font-size: 1.1rem;
+}
+
+.ComponentStyles-module__KJq-QG__errorMessage {
+  color: var(--danger-color);
+  margin-top: 1rem;
+}
+
+.ComponentStyles-module__KJq-QG__resultsContainer.ComponentStyles-module__KJq-QG__highRisk {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.ComponentStyles-module__KJq-QG__resultsContainer.ComponentStyles-module__KJq-QG__mediumRisk {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.ComponentStyles-module__KJq-QG__resultsContainer.ComponentStyles-module__KJq-QG__lowRisk {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.ComponentStyles-module__KJq-QG__chatWindow {
+  border: 1px solid var(--card-border-color);
+  background-color: #f1f3f5;
+  border-radius: 8px;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  height: 60vh;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  overflow-y: auto;
+}
+
+.ComponentStyles-module__KJq-QG__chatMessage {
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 80%;
+  display: flex;
+}
+
+.ComponentStyles-module__KJq-QG__chatMessage.ComponentStyles-module__KJq-QG__user {
+  flex-direction: row-reverse;
+  align-self: flex-end;
+}
+
+.ComponentStyles-module__KJq-QG__avatar {
+  color: #fff;
+  background-color: #adb5bd;
+  border-radius: 50%;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.ComponentStyles-module__KJq-QG__chatMessage.ComponentStyles-module__KJq-QG__user .ComponentStyles-module__KJq-QG__avatar {
+  background-color: var(--primary-color);
+}
+
+.ComponentStyles-module__KJq-QG__messageText {
+  background-color: var(--bot-message-bg);
+  border: 1px solid var(--card-border-color);
+  color: var(--bot-message-text);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-radius: 15px;
+  padding: 10px 15px;
+  transition: background-color .3s, color .3s, border-color .3s;
+  position: relative;
+}
+
+.ComponentStyles-module__KJq-QG__chatMessage.ComponentStyles-module__KJq-QG__user .ComponentStyles-module__KJq-QG__messageText {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+}
+
+.ComponentStyles-module__KJq-QG__chatInputContainer {
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+}
+
+.ComponentStyles-module__KJq-QG__blinkingCursor {
+  animation: 1s step-end infinite ComponentStyles-module__KJq-QG__blink;
+}
+
+.ComponentStyles-module__KJq-QG__copyButton {
+  color: inherit;
+  cursor: pointer;
+  opacity: .7;
+  background: rgba(0, 0, 0, .1);
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transition: opacity .2s;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.ComponentStyles-module__KJq-QG__copyButton:hover {
+  opacity: 1;
+}
+
+.ComponentStyles-module__KJq-QG__exampleContainer {
+  color: var(--text-color-muted);
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  font-size: .95rem;
+}
+
+.ComponentStyles-module__KJq-QG__exampleLink {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.ComponentStyles-module__KJq-QG__fileUploader input[type="file"] {
+  color: var(--text-color-muted);
+  width: 100%;
+  font-size: .9rem;
+}
+
+/*# sourceMappingURL=src_e51b5b84._.css.map*/

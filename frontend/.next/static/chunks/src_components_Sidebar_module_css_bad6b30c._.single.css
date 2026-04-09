@@ -1,0 +1,59 @@
+/* [project]/src/components/Sidebar.module.css [app-client] (css) */
+.Sidebar-module__WZVnLW__sidebar {
+  background-color: var(--sidebar-bg-color);
+  border-right: 1px solid var(--card-border-color);
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  height: 100vh;
+  padding: 1.5rem;
+  transition: background-color .3s, border-color .3s;
+  display: flex;
+}
+
+.Sidebar-module__WZVnLW__title {
+  text-align: center;
+  color: var(--sidebar-hover-text);
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: color .3s;
+}
+
+.Sidebar-module__WZVnLW__navList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Sidebar-module__WZVnLW__navList li {
+  cursor: pointer;
+  color: var(--sidebar-text-color);
+  border-radius: 8px;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  transition: background-color .2s, color .2s;
+  display: flex;
+}
+
+.Sidebar-module__WZVnLW__navList li:hover {
+  background-color: var(--sidebar-hover-bg);
+  color: var(--sidebar-hover-text);
+}
+
+.Sidebar-module__WZVnLW__navList li.Sidebar-module__WZVnLW__active {
+  background-color: var(--sidebar-active-bg);
+  color: var(--sidebar-active-text);
+  font-weight: 600;
+}
+
+.Sidebar-module__WZVnLW__sidebarFooter {
+  border-top: 1px solid var(--card-border-color);
+  padding-top: 1rem;
+  transition: border-color .3s;
+}
+
+/*# sourceMappingURL=src_components_Sidebar_module_css_bad6b30c._.single.css.map*/

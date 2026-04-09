@@ -1,0 +1,58 @@
+/* frontend/src/components/Sidebar.module.css (Corrected for Theme Readability) */
+.sidebar {
+  width: 280px;
+  background-color: var(--sidebar-bg-color);
+  height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid var(--card-border-color);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  /* --- FIX: Use the main text color, which is white in light mode on the blue sidebar --- */
+  color: var(--sidebar-hover-text); 
+  transition: color 0.3s;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navList li {
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  color: var(--sidebar-text-color);
+}
+
+.navList li:hover {
+  background-color: var(--sidebar-hover-bg);
+  color: var(--sidebar-hover-text);
+}
+
+.navList li.active {
+  background-color: var(--sidebar-active-bg);
+  color: var(--sidebar-active-text);
+  font-weight: 600;
+}
+
+.sidebarFooter {
+  padding-top: 1rem;
+  border-top: 1px solid var(--card-border-color);
+  transition: border-color 0.3s;
+}

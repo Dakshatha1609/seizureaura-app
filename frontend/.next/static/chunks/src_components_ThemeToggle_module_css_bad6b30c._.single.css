@@ -1,0 +1,48 @@
+/* [project]/src/components/ThemeToggle.module.css [app-client] (css) */
+.ThemeToggle-module__sGqMhG__toggleContainer {
+  cursor: pointer;
+  background-color: var(--toggle-bg);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: .75rem;
+  padding: .5rem;
+  transition: background-color .3s;
+  display: flex;
+}
+
+.ThemeToggle-module__sGqMhG__toggleSwitch {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 12px;
+  align-items: center;
+  width: 44px;
+  height: 24px;
+  padding: 4px;
+  display: flex;
+  position: relative;
+}
+
+.ThemeToggle-module__sGqMhG__toggleKnob {
+  background-color: var(--toggle-knob);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  transition: transform .3s;
+  position: absolute;
+}
+
+.ThemeToggle-module__sGqMhG__toggleKnob.ThemeToggle-module__sGqMhG__dark {
+  transform: translateX(20px);
+}
+
+.ThemeToggle-module__sGqMhG__icon {
+  color: var(--toggle-icon);
+  font-size: 1.1rem;
+  transition: color .3s;
+}
+
+.ThemeToggle-module__sGqMhG__icon.ThemeToggle-module__sGqMhG__active {
+  color: var(--toggle-icon-active);
+}
+
+/*# sourceMappingURL=src_components_ThemeToggle_module_css_bad6b30c._.single.css.map*/
