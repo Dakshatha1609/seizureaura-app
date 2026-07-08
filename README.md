@@ -85,9 +85,12 @@ Due to GitHub size limitations, trained model files are not included in this rep
 
 The system is designed to load models externally or during runtime, and the implementation for model integration is fully provided.
 
+---
 ## API Overview
 POST /predict → Predict seizure risk
 POST /analyze → Detect aura stage from symptoms
+
+---
 
 Demo
 Homepage
@@ -102,11 +105,15 @@ Aura Stage Detection
 Seizure Risk Prediction
 <img width="701" height="534" alt="08_EEG_Seizure_Risk_Output" src="https://github.com/user-attachments/assets/95be64b2-5048-4efe-adcc-fb72910b8647" />
 
+---
 ## Highlights
 Combines symptom analysis and EEG-based prediction
 Demonstrates real-world healthcare AI use case
 End-to-end system from input to prediction
 
+---
 ## Limitations
 Requires structured symptom input
 No real-time EEG integration
+
+---
